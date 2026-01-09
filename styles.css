@@ -863,9 +863,11 @@ body {
 }
 
 .scroll-image {
-    position: static;
+    width: 100%;
     height: auto;
-    justify-self: center;
+    max-width: min(600px, 90vw);
+    margin: 0 auto;
+    display: block;
 }
 
 .scroll-image:nth-child(1) {
