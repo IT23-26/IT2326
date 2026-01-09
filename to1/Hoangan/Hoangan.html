@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỷ Yếu Lớp 12 Tin</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #5e2b97, #9b59b6);
+            color: white;
+            line-height: 1.8;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 70px 20px;
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+
+        .author {
+            margin-top: 20px;
+            font-size: 18px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Section */
+        section {
+            padding: 40px 8%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* Message box */
+        .message {
+            max-width: 900px;
+            margin: 0 auto 40px;
+            font-size: 18px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Videos */
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 50px 10%;
+            background: rgba(0, 0, 0, 0.35);
+            font-size: 18px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            .message {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>KỶ YẾU LỚP 12 TIN</h1>
+        <p>Khóa 2023 – 2026 | THPT Chuyên Lương Văn Chánh</p>
+        <p class="author">Người làm: <b>Đặng Hoàng An</b></p>
+    </header>
+
+    <section>
+        <div class="message">
+            <p>
+                12 Tin – ba năm không dài nhưng đủ để ghi dấu,
+                Bao kỷ niệm, bao nụ cười, bao lần cùng nhau cố gắng.
+                Mai này dù mỗi đứa một hướng đi,
+                Nhưng ký ức ấy sẽ mãi là thanh xuân rực rỡ của chúng ta.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>📸 Những Khoảnh khắc đáng nhớ</h2>
+        <div class="gallery">
+            <img src="tatca/Anh/anhlop.jpg">
+            <img src="tatca/Anh/anhlop2.jpg">
+            <img src="tatca/Anh/anhlop3.jpg">
+            <img src="tatca/Anh/anhlop4.jpg">
+            <img src="tatca/Anh/anhlop5.jpg">
+
+            <img src="tatca/Anh/hdtn.jpg">
+            <img src="tatca/Anh/hdtn2.jpg">
+            <img src="tatca/Anh/hdtn3.jpg">
+            <img src="tatca/Anh/hdtn4.jpg">
+            <img src="tatca/Anh/hdtn5.jpg">
+            <img src="tatca/Anh/hdtn6.jpg">
+
+            <img src="tatca/Anh/nttv.jpg">
+            <img src="tatca/Anh/nttv2.jpg">
+            <img src="tatca/Anh/nttv3.jpg">
+            <img src="tatca/Anh/nttv4.jpg">
+            <img src="tatca/Anh/nttv5.jpg">
+            <img src="tatca/Anh/nttv6.jpg">
+            <img src="tatca/Anh/nttv7.jpg">
+            <img src="tatca/Anh/nttv8.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h2>🎬 Video kỷ niệm</h2>
+        <div class="videos">
+            <video src="tatca/Video/vd1.mp4" controls></video>
+            <video src="tatca/Video/vd2.mp4" controls></video>
+            <video src="tatca/Video/vd3.mp4" controls></video>
+            <video src="tatca/Video/vd4.mp4" controls></video>
+        </div>
+    </section>
+
+    <section>
+        <div class="message">
+            <p>
+                Ba năm trôi qua thật nhanh,
+                12 Tin – mỗi người một câu chuyện, một ước mơ, nhưng cùng chung một thanh xuân.
+                Chúng ta đã cười, đã khóc, đã cùng nhau vượt qua những ngày học căng thẳng, những giờ ra chơi ồn ào, những buổi học thêm khuya muộn.
+                Dẫu mai này mỗi đứa một con đường, một phương trời,
+                ký ức về lớp, về bạn bè, về những ngày tháng học trò sẽ mãi đọng trong tim.
+                Xin cảm ơn tất cả các bạn đã cùng nhau viết nên quãng thời gian đẹp nhất đời học sinh.
+                Dù chia tay, nhưng 12 Tin vẫn luôn là nơi trở về của thanh xuân,
+                là nơi mà mỗi lần nhớ lại, ta sẽ mỉm cười, và thấy lòng ấm áp như chưa từng rời nhau.
+            </p>
+            <p>
+                Cảm ơn vì đã cùng nhau tạo nên một thời thanh xuân rực rỡ.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Gửi đến tất cả các bạn lớp 12 Tin,  
+            dù sau này mỗi người một con đường, một ước mơ,  
+            mong rằng khi nhìn lại kỷ yếu này,  
+            chúng ta vẫn nhớ rằng đã từng có một tập thể  
+            gắn bó, chân thành và đẹp đẽ đến như vậy.
+            💜 Hãy giữ mãi những kỷ niệm này, 12 Tin nhé! 💜
+        </p>
+        <p style="margin-top: 20px;">
+            💜 Đặng Hoàng An 💜
+        </p>
+    </footer>
+
+</body>
+</html>

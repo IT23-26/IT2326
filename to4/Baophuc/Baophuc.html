@@ -1,0 +1,305 @@
+
+  <!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kỷ Yếu Cuối Cấp III</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+      }
+
+      body {
+        background: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* NAV */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 10px 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffd700;
+      }
+
+      /* HERO */
+      .hero {
+        height: 100vh;
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+          ),
+          url("assets/Anh/FC11TIN.jpg") center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+      }
+
+      /* SECTION */
+      .section {
+        padding: 80px 8%;
+      }
+
+      .section h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      .story {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        text-align: center;
+        font-size: 18px;
+        color: #555;
+      }
+
+      /* GALLERY */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: 0.4s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      }
+
+      /* VIDEO */
+      .video-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      video {
+        width: 80%;
+        max-width: 800px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      /* FOOTER */
+      footer {
+        background: #111;
+        color: #aaa;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 28px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+
+        video {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav>
+      <ul>
+        <li><a href="#class">Ảnh Tập Thể</a></li>
+        <li><a href="#activities">Hoạt Động</a></li>
+        <li><a href="#special">Khoảnh Khắc</a></li>
+        <li><a href="#videos">Video</a></li>
+        <li><a href="#end">Tâm Sự</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <h1>
+        KỶ YẾU LỚP CHUYÊN TIN – KHOÁ 2023–2026 <br />
+        THPT Chuyên Lương Văn Chánh
+      </h1>
+      <p style="font-size: 22px">Trần Bảo Phúc</p>
+    </header>
+
+  <body>
+    <!-- Điều hướng -->
+    <nav>
+      <ul>
+        <li><a href="#class">Ảnh Tập Thể</a></li>
+        <li><a href="#activities">Hoạt Động</a></li>
+        <li><a href="#special">Khoảnh Khắc</a></li>
+        <li><a href="#videos">Video Kỉ Niệm</a></li>
+        <li><a href="#end">Tâm Sự</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <header class="hero">
+      <h1>
+        KỶ YẾU LỚP CHUYÊN TIN – KHOÁ 2023–2026 THPT Chuyên Lương Văn Chánh
+      </h1>
+      <p style="font-size: 25px">Trần Bảo Phúc</p>
+    </header>
+
+    <!-- Ảnh tập thể -->
+    <section id="class" class="section">
+      <h2>Ảnh Tập Thể</h2>
+
+      <p class="story reveal">
+        Gặp nhau là cái duyên ở lại được với nhau là do học chung lớp chứ không có gì ò_Ó.
+      </p>
+
+      <div class="gallery">
+        <img src="assets/images/1.jpg" alt="" />
+        <img src="assets/images/2.jpg"  alt="" />
+        <img src="assets/images/3.jpg" alt="" />
+        <img src="assets/images/5.jpg" alt="" />
+        <img src="assets/images/4.jpg" alt="" />
+        <img src="assets/images/8.jpg"  alt=""/>
+        <img src="assets/images/10.jpg" alt="" />
+        <img src="assets/images/9.jpg" alt="" />
+       
+      </div>
+    </section>
+
+    <!-- Ảnh hoạt động -->
+    <section id="activities" class="section">
+      <h2>Ảnh Hoạt Động – Ngoại Khóa</h2>
+
+      <p class="story reveal">
+        Thanh xuân của một tập thể không chỉ nằm ở những tấm ảnh lớp, mà còn là
+        những buổi đá bóng cháy hết mình, những lần cùng nhau đi chơi, tập thể
+        dục, ăn uống, và cả những khoảnh khắc làm điều nhỏ bé thôi nhưng thật
+        đáng nhớ. Nhìn lại những tấm hình này mới thấy, chúng ta đã cùng nhau
+        trải qua rất nhiều – và đều thật đẹp.
+      </p>
+
+      <div class="gallery">
+      <img src="assets/images/3.jpg" alt="" />
+        <img src="assets/images/5.jpg" alt="" />
+        <img src="assets/images/4.jpg" alt="" />
+        <img src="assets/images/1.jpg" alt="" />
+        <img src="assets/images/2.jpg" alt="" />
+        <img src="assets/images/6.jpg" alt="" />
+        <img src="assets/images/7.jpg" alt="" />
+        <img src="assets/images/8.jpg" alt="" />
+        <img src="assets/images/9.jpg" alt="" />
+        <img src="assets/images/10.jpg" alt="" />
+        <img src="assets/images/5.jpg" alt="" />
+        <img src="assets/images/4.jpg" alt="" />
+      </div>
+    </section>
+    <!-- Khoảnh khắc đáng nhớ-->
+    <section id="special" class="section">
+      <h2>Khoảnh Khắc Đáng Nhớ</h2>
+
+      <p class="story reveal">
+        Đây là những khoảnh khắc nhỏ thôi, nhưng lại làm ta nhớ mãi. Những lần
+        ngồi ghế đá tám chuyện trời đất, những buổi cà phê cuối tuần, những buổi
+        tối cả nhóm kéo nhau đi ăn, hay chỉ đơn giản là một nụ cười tự nhiên lúc
+        vô tình chụp lại. Đó là thanh xuân – không hoàn hảo, nhưng rất thật.
+      </p>
+
+      <div class="gallery">
+        <img src="assets/images/1.jpg" />
+        <img src="assets/images/2.jpg" />
+        <img src="assets/images/3.jpg" alt="" />
+        <img src="assets/images/5.jpg" alt="" />
+        <img src="assets/images/4.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="videos" class="section">
+      <h2>Video Kỷ Niệm</h2>
+      <div class="video-container">
+        <video
+          autoplay
+          muted
+          loop
+          controls
+          playsinline
+          src="assets/video/hocbai.mp4"
+        ></video>
+        
+      </div>
+    </section>
+
+    <!-- Lời tâm sự -->
+    <section id="end" class="section">
+      <h2>Lời Tâm Sự</h2>
+      <p class="story reveal">
+        “Ba năm cấp 3 với Chuyên Tin 23–26 giống như một cuốn nhật ký, mà mỗi
+        trang đều là một câu chuyện không bao giờ muốn quên. Chúng ta đã lớn lên
+        cùng nhau — từ những đứa còn ngơ ngác, đến những người gần trưởng thành,
+        ai cũng mang theo một phần thanh xuân đẹp nhất. Cảm ơn những lần cả lớp
+        cùng nhau làm bài nhóm, những trận đá bóng dưới nắng chang chang, những
+        lần cười đến mức không thở nổi, những cuộc nói chuyện thâu đêm chẳng vì
+        lý do gì, và những khoảnh khắc tưởng chừng bình thường nhưng hóa ra lại
+        vô giá. Sau này dù mỗi người đi một hướng, mong rằng mỗi khi xem lại
+        những bức ảnh này, chúng ta đều sẽ mỉm cười, và nhớ rằng: đã từng tồn
+        tại một tập thể Chuyên Tin tuyệt vời đến thế. Chúc tất cả chúng ta sau
+        này đều sống thật hạnh phúc, làm điều mình yêu, và trở thành phiên bản
+        tốt nhất của chính mình. — Hải Dương”
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        © 2026 — Kỷ yếu Chuyên Tin Khoá 2023-2026 Trường THPT Chuyên Lương Văn
+        Chánh
+      </p>
+    </footer>
+  </body>
+</html>

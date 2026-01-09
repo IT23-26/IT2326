@@ -1,0 +1,102 @@
+body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background: #ffffff;
+ }
+ 
+ .container {
+     display: flex;
+     width: 100%;
+ }
+ 
+ /* MENU */
+ .sidebar {
+     width: 200px;
+     background: #e6f3f7;
+     padding: 15px;
+     border-right: 1px solid #ccc;
+ }
+ 
+ .sidebar h3 {
+     text-align: center;
+     color: #006699;
+ }
+ 
+ .sidebar ul {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ .sidebar li {
+     margin: 10px 0;
+ }
+ 
+ .sidebar a {
+     display: block;
+     padding: 8px;
+     background: #d9edf7;
+     color: #006699;
+     text-decoration: none;
+     border: 1px solid #aacfe4;
+ }
+ 
+ .sidebar a:hover {
+     background: #bcdff1;
+ }
+ 
+ /* CONTENT */
+ .content {
+     flex: 1;
+     padding: 20px;
+ }
+ 
+ .content h1 {
+     text-align: center;
+     color: #cc3333;
+ }
+ 
+ .content h2 {
+     text-align: center;
+     color: #336699;
+ }
+ 
+ /* TABLE */
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+ 
+ table th,
+ table td {
+     border: 1px solid #7aa7c7;
+     padding: 8px;
+     text-align: center;
+ }
+ 
+ table th {
+     background: #d9edf7;
+     color: #003366;
+ }
+ 
+ table tr:nth-child(even) {
+     background: #f2f9fc;
+ }
+ 
+ table a {
+     color: #0066cc;
+     text-decoration: none;
+ }
+ 
+ table a:hover {
+     text-decoration: underline;
+ }
+ 
+ /* NOTE */
+ .note {
+     text-align: center;
+     margin-top: 15px;
+     font-style: italic;
+     color: #555;
+ }
+ 

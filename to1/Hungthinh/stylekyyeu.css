@@ -1,0 +1,118 @@
+/* --- CẤU HÌNH CHUNG --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.container-fluid { max-width: 1450px; margin: 0 auto; padding: 0 30px; }
+
+/* --- HEADER --- */
+header {
+    height: 75vh;
+    background: url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=1470') center/cover no-repeat;
+    position: relative;
+    color: white;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+}
+.title { font-family: 'Dancing Script', cursive; font-size: 5rem; text-shadow: 2px 4px 10px rgba(0,0,0,0.4); }
+.subtitle { font-size: 1.6rem; letter-spacing: 2px; margin-top: 10px; }
+
+/* --- CÁC SECTION --- */
+section { padding: 90px 0; }
+.section-title {
+    text-align: center; font-family: 'Dancing Script', cursive;
+    font-size: 3.8rem; color: #d35400; margin-bottom: 45px;
+}
+.bg-light { background-color: #fdfaf6; }
+.centertext { text-align: center; margin-bottom: 35px; font-size: 1.4rem; font-weight: 600; }
+
+/* --- ĐÔI ĐIỀU VỀ TÔI (Ảnh tròn & Chữ to rõ) --- */
+.profile-flex { display: flex; align-items: center; justify-content: center; gap: 60px; flex-wrap: wrap; }
+.profile-img-container { flex: 0 0 260px; }
+.avatar-round {
+    width: 260px !important; height: 260px !important;
+    border-radius: 50% !important; object-fit: cover;
+    border: 6px solid #d35400; box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+.profile-content { flex: 1; min-width: 320px; }
+.profile-row { font-size: 1.4rem; margin-bottom: 15px; color: #2c3e50; }
+.profile-row strong { color: #d35400; min-width: 165px; display: inline-block; font-weight: 700; }
+.motto { display: block; margin-top: 10px; color: #555; font-size: 1.35rem; }
+.description-box {
+    margin-top: 25px; padding: 25px; background: #fff;
+    border-left: 6px solid #d35400; font-size: 1.35rem; line-height: 1.9;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.02);
+}
+
+/* --- HỆ THỐNG CHIA HÀNG 4 ẢNH (Gia đình & Bonus) --- */
+.image-row {
+    display: flex; flex-wrap: wrap;
+    gap: 25px; /* Khoảng cách giữa các ảnh */
+    justify-content: center; padding: 20px 0;
+}
+.photo-placeholder, .media-container {
+    flex: 1;
+    min-width: 280px;
+    max-width: calc(25% - 25px); /* Chia 4 cột hoàn hảo */
+    height: 350px; /* Chiều cao ảnh lớn */
+    overflow: hidden; border-radius: 20px;
+    position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* --- TỐI ƯU ẢNH VÀ VIDEO --- */
+img {
+    width: 100%; height: 100%; display: block;
+    object-fit: cover; object-position: center;
+    border-radius: 20px; transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+video {
+    width: 100%; height: 100%; display: block;
+    object-fit: cover; border-radius: 20px; background-color: #000; outline: none;
+}
+.photo-placeholder:hover img, .media-container:hover img { transform: scale(1.1); }
+
+.media-caption {
+    position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9); padding: 7px 22px;
+    border-radius: 30px; font-weight: bold; font-size: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- GÓC THỊNH BÒ --- */
+.thinh-bo-content { text-align: center; max-width: 900px; margin: 0 auto; }
+.thinh-quote { font-size: 1.8rem; color: #d35400; font-style: italic; margin-bottom: 30px; }
+.hobby-tag { display: inline-block; background: #d35400; color: white; padding: 8px 20px; border-radius: 30px; margin: 6px; font-weight: 700; }
+.thinh-text { font-size: 1.3rem; line-height: 1.8; color: #555; }
+
+/* --- BẠN THÂN --- */
+.friends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; }
+.friend-card { background: #fff; padding: 45px; border-radius: 25px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.friend-avatar { width: 75px; height: 75px; background: #d35400; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; font-weight: bold; }
+
+/* --- LỜI TÂM SỰ --- */
+.letter { background: white; padding: 60px; border-radius: 25px; font-style: italic; font-size: 1.35rem; border: 1px solid #eee; line-height: 2.2; box-shadow: 0 15px 50px rgba(0,0,0,0.05); }
+.signature { text-align: right; margin-top: 40px; font-family: 'Dancing Script', cursive; font-size: 3rem; color: #d35400; }
+
+/* --- FOOTER --- */
+footer { background: #2c3e50; color: white; text-align: center; padding: 50px 0; margin-top: 80px; }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1200px) {
+    .photo-placeholder, .media-container { max-width: calc(50% - 25px); }
+}
+@media (max-width: 768px) {
+    .photo-placeholder, .media-container { max-width: 100%; height: 280px; }
+    .profile-flex { flex-direction: column; text-align: center; }
+    .profile-row strong { display: block; margin-bottom: 5px; }
+    .title { font-size: 3.5rem; }
+    .section-title { font-size: 3rem; }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỷ Niệm Chúng Ta</title>
+    <style>
+        /* CSS để trang web lung linh hơn */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1523050335392-93851179428c?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 { font-size: 3.5rem; margin-bottom: 10px; }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+
+        /* Giới thiệu bản thân */
+        .profile { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+        }
+
+        /* Gallery ảnh kỷ niệm */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover { transform: scale(1.05); }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mãi Là Bạn Nhé!</h1>
+        <p>Lớp chúng mình - Những năm tháng rực rỡ</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>Về Tôi</h2>
+            <div class="profile">
+                <img src="https://via.placeholder.com/150" alt="Ảnh của tôi">
+                <div>
+                    <h3>Họ và Tên: Trần Anh Hiếu</h3>
+<p>Chào mọi người! Tôi là một thành viên của gia đình 12 Tin. Với tôi, những ngày tháng cùng học, cùng chơi với các bạn là quãng thời gian đẹp nhất.</p>
+                    <p><strong>Sở thích:</strong> Chụp ảnh, đá bóng và tán gẫu cùng bạn bè.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="memories">
+            <h2>Kỷ Niệm Của Lớp</h2>
+            <p>Dưới đây là những khoảnh khắc không thể nào quên của chúng ta...</p>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=500&q=60" alt="Kỷ niệm 1">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=60" alt="Kỷ niệm 2">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=500&q=60" alt="Kỷ niệm 3">
+                <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=500&q=60" alt="Kỷ niệm 4">
+            </div>
+        </section>
+
+        <section id="message">
+            <h2>Lời Nhắn Nhủ</h2>
+            <blockquote>
+                "Thanh xuân giống như một cơn mưa rào, dù cho bạn từng bị cảm lạnh vì tắm mưa, bạn vẫn muốn được đắm mình trong cơn mưa ấy lần nữa."
+            </blockquote>
+            <p style="text-align: right;">— <em>Gửi tập thể lớp thân yêu</em></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Trang web kỷ niệm tạo bởi Hiếu</p>
+    </footer>
+
+</body>
+</html>

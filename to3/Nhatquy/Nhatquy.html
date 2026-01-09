@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyễn Nhật Quý - 12 Tin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 10%;
+            color: white;
+            background:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("img/header.jpg") center/cover no-repeat;
+        }
+
+        header h1 {
+            font-size: 48px;
+        }
+        header p {
+            margin-top: 15px;
+            font-size: 19px;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #777;
+        }
+
+        /* ===== TIMELINE ===== */
+        .time-item {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+
+        .time-item img {
+            width: 50%;
+            border-radius: 20px;
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery-hint {
+            text-align: center;
+            color: #999;
+            margin-bottom: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
+        /* ===== LETTER ===== */
+        .letter {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kỷ yếu của tôi</h1>
+    <p>12 Tin – THPT Chuyên Lương Văn Chánh<br>Niên khóa 2023 – 2026</p>
+</header>
+
+<section>
+    <h2>⏳ Ba năm, một hành trình</h2>
+
+    <table style="width:100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; font-size: 16px; table-layout: fixed;">
+        <tr style="background:#f0f0f0;">
+            <th style="padding:20px; border:1px solid #ddd; font-size:20px; width:15%;">Năm học</th>
+            <th style="padding:20px; border:1px solid #ddd; font-size:20px; width:35%;">Cảm xúc</th>
+            <th style="padding:20px; border:1px solid #ddd; font-size:20px; width:50%;">Hình ảnh</th>
+        </tr>
+
+        <tr>
+            <td style="padding:20px; border:1px solid #ddd; text-align:center; font-weight:600;">Năm 10</td>
+            <td style="padding:14px 18px; border:1px solid #ddd; line-height:1.5;">Những ngày đầu bước vào lớp Chuyên Tin, mọi thứ đều mới mẻ. Từ bảng đen, dãy bàn cho đến những gương mặt chưa kịp gọi tên, tất cả tạo nên cảm giác vừa háo hức vừa bỡ ngỡ.</td>
+            <td style="padding:20px; border:1px solid #ddd; text-align:center;">
+                <img src="img/nam10.jpg" style="width:100%; max-width:480px; border-radius:16px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding:20px; border:1px solid #ddd; text-align:center; font-weight:600;">Năm 11</td>
+            <td style="padding:14px 18px; border:1px solid #ddd; line-height:1.5;">Bài vở nhiều hơn, áp lực lớn hơn, nhưng cũng chính trong khoảng thời gian này, mình học được cách cố gắng, kiên trì và trưởng thành từng chút một.</td>
+            <td style="padding:20px; border:1px solid #ddd; text-align:center;">
+                <img src="img/nam11.jpg" style="width:100%; max-width:480px; border-radius:16px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td style="padding:20px; border:1px solid #ddd; text-align:center; font-weight:600;">Năm 12</td>
+            <td style="padding:14px 18px; border:1px solid #ddd; line-height:1.5;">Những ngày cuối cùng của thời học sinh. Mỗi buổi đến lớp đều trở nên chậm lại, vì biết rằng sắp phải nói lời tạm biệt với một thanh xuân không thể quay lại.</td>
+            <td style="padding:20px; border:1px solid #ddd; text-align:center;">
+                <img src="img/nam12.jpg" style="width:100%; max-width:480px; border-radius:16px;">
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>📷 Những mảnh ký ức</h2>
+    <div class="gallery-hint">⇆ Lăn sang ngang để xem ảnh</div>
+    <div class="gallery">
+        <img src="img/1.jpg" alt="memory">
+        <img src="img/2.jpg" alt="memory">
+        <img src="img/3.jpg" alt="memory">
+        <img src="img/4.jpg" alt="memory">
+        <img src="img/5.jpg" alt="memory">
+        <img src="img/6.jpg" alt="memory">
+        <img src="img/7.jpg" alt="memory">
+        <img src="img/8.jpg" alt="memory">
+        <img src="img/9.jpg" alt="memory">
+        <img src="img/10.jpg" alt="memory">
+        <img src="img/11.jpg" alt="memory">
+        <img src="img/12.jpg" alt="memory">
+        <img src="img/13.jpg" alt="memory">
+        <img src="img/14.jpg" alt="memory">
+        <img src="img/15.jpg" alt="memory">
+        <img src="img/16.jpg" alt="memory">
+        <img src="img/17.jpg" alt="memory">
+        <img src="img/18.jpg" alt="memory">
+        <img src="img/19.jpg" alt="memory">
+        <img src="img/20.jpg" alt="memory">
+        <img src="img/21.jpg" alt="memory">
+        <img src="img/22.jpg" alt="memory">
+        <img src="img/23.jpg" alt="memory">
+        <img src="img/24.jpg" alt="memory">
+        <img src="img/25.jpg" alt="memory">
+        <img src="img/26.jpg" alt="memory">
+        <img src="img/27.jpg" alt="memory">
+        <img src="img/28.jpg" alt="memory">
+        <img src="img/29.jpg" alt="memory">
+        <img src="img/30.jpg" alt="memory">
+        <img src="img/31.jpg" alt="memory">
+        <img src="img/32.jpg" alt="memory">
+        <img src="img/33.jpg" alt="memory">
+        <img src="img/34.jpg" alt="memory">
+        <img src="img/35.jpg" alt="memory">
+        <img src="img/36.jpg" alt="memory">
+        <img src="img/37.jpg" alt="memory">
+        <img src="img/38.jpg" alt="memory">
+        <img src="img/39.jpg" alt="memory">
+        <img src="img/40.jpg" alt="memory">
+        <img src="img/41.jpg" alt="memory">
+        <img src="img/42.jpg" alt="memory">
+        <img src="img/43.jpg" alt="memory">
+        <img src="img/44.jpg" alt="memory">
+        <img src="img/45.jpg" alt="memory">
+        <img src="img/46.jpg" alt="memory">
+        <img src="img/47.jpg" alt="memory">
+        <img src="img/48.jpg" alt="memory">
+        <img src="img/49.jpg" alt="memory">
+        <img src="img/50.jpg" alt="memory">
+        <img src="img/51.jpg" alt="memory">
+        <img src="img/52.jpg" alt="memory">
+        <img src="img/53.jpg" alt="memory">
+        <img src="img/54.jpg" alt="memory">
+        <img src="img/55.jpg" alt="memory">
+        <img src="img/56.jpg" alt="memory">
+        <img src="img/57.jpg" alt="memory">
+        <img src="img/58.jpg" alt="memory">
+    </div>
+</section>
+
+<section>
+    <h2>💌 Lời tri ân</h2>
+    <div class="letter">
+        Cảm ơn thầy cô — những người đã kiên nhẫn dạy dỗ, truyền đạt kiến thức và cả những bài học không có trong sách vở.
+        Cảm ơn vì đã luôn đồng hành, nhắc nhở và tin tưởng, ngay cả trong những lúc chúng em còn non nớt và chưa thật sự hiểu mình đang đi đâu.
+        <br><br>
+        Cảm ơn bạn bè — vì đã cùng nhau tạo nên một thanh xuân rất đẹp. Những buổi học chung, những lần cười đùa vô tư, những áp lực cùng sẻ chia… tất cả đã trở thành ký ức không thể thay thế.
+        <br><br>
+        Ba năm dưới mái trường Chuyên Lương Văn Chánh không chỉ là hành trình học tập, mà còn là hành trình lớn lên. Dù sau này mỗi người một con đường, mong rằng khi nhớ về quãng thời gian ấy, chúng ta vẫn thấy lòng mình ấm lại vì đã từng có nhau trong những năm tháng thanh xuân.
+    </div>
+</section>
+
+<footer>
+    Nguyễn Nhật Quý · 12 Tin · 2026
+</footer>
+
+</body>
+</html>

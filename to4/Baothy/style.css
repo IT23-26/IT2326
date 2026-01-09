@@ -1,0 +1,74 @@
+body {
+    background: #fff8ec;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.trangchu {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border: 6px solid #f6c56f;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.title {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 64px;
+    color: #2f9e44;
+    margin-bottom: 5px;
+}
+
+.note {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #913406;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.box {
+    background: #fffdf5;
+    border: 3px dashed #f08c00;
+    padding: 15px;
+    min-height: 180px;
+}
+
+.box h3 {
+    text-align: center;
+    color: #1971c2;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.box img {
+    max-width: 10vw; /* ensures it never exceeds half of viewport width */
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+.box p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.large {
+    grid-column: span 3;
+    min-height: 220px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #555;
+}

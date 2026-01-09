@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kỷ yếu 12 Tin</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+	margin:0;
+	font-family:'Segoe UI',sans-serif;
+	background:radial-gradient(circle at top,#6a1b9a,#2c003e);
+	color:#fff;
+	line-height:1.9;
+}
+
+header{
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	padding:20px;
+	background:rgba(0,0,0,0.25);
+}
+
+header h1{
+	font-size:56px;
+	letter-spacing:3px;
+	margin-bottom:10px;
+}
+
+header p{
+	font-size:20px;
+	opacity:.95;
+}
+
+.author{
+	margin-top:25px;
+	font-style:italic;
+	opacity:.9;
+}
+
+
+.glass{
+	background:rgba(255,255,255,0.12);
+	backdrop-filter:blur(10px);
+	border-radius:22px;
+	box-shadow:0 18px 35px rgba(0,0,0,.45);
+}
+
+section{
+	padding:80px 8%;
+}
+
+h2{
+	text-align:center;
+	font-size:34px;
+	margin-bottom:35px;
+}
+
+
+.message{
+	max-width:900px;
+	margin:auto;
+	padding:35px;
+	text-align:center;
+	font-size:20px;
+}
+
+
+.gallery{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+	gap:25px;
+}
+
+.gallery img{
+	width:100%;
+	border-radius:18px;
+	box-shadow:0 12px 25px rgba(0,0,0,.5);
+	transition:transform .25s ease;
+}
+.gallery img:hover{
+	transform:scale(1.05);
+}
+
+.videos{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+	gap:30px;
+}
+
+video{
+	width:100%;
+	border-radius:20px;
+	box-shadow:0 15px 30px rgba(0,0,0,.55);
+}
+
+.timeline{
+	max-width:900px;
+	margin:auto;
+}
+
+.time{
+	margin:28px 0;
+	padding:25px;
+	border-left:4px solid #e1bee7;
+	font-size:19px;
+}
+.time span{
+	color:#e1bee7;
+	font-weight:600;
+}
+
+.final{
+	text-align:center;
+	font-size:28px;
+	line-height:1.7;
+	margin-top:30px;
+}
+
+footer{
+	padding:70px 10%;
+	text-align:center;
+	background:rgba(0,0,0,.35);
+	font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+	<h1>KỶ YẾU LỚP 12 TIN</h1>
+	<p>Khóa 2023 – 2026 | THPT Chuyên Lương Văn</p>
+	<p class="author">Người lưu giữ ký ức: <b>Nguyễn Gia Phúc</b></p>
+</header>
+
+<section>
+	<div class="message glass">
+		<p>
+			Không ai trong chúng ta từng nghĩ  
+			rằng những ngày đi học bình thường ấy  
+			lại trở thành điều đáng nhớ nhất của cả cuộc đời.
+		</p>
+		<p>
+			Và trong những ký ức đẹp đẽ ấy,  
+			<b>12 Tin</b> là một phần không thể thay thế.
+		</p>
+	</div>
+</section>
+
+<section>
+	<h2>📸 Thanh xuân qua từng khung hình</h2>
+	<div class="gallery">
+		<img src="TongHop/Anh/11Tin.jpg">
+		<img src="TongHop/Anh/anhlop.jpg">
+		<img src="TongHop/Anh/Anh4.jpg">
+		<img src="TongHop/Anh/Anh5.jpg">
+		<img src="TongHop/Anh/Anh6.jpg">
+		<img src="TongHop/Anh/dabanh.jpg">
+		<img src="TongHop/Anh/ghe.jpg">
+		<img src="TongHop/Anh/THT.jpg">
+		<img src="TongHop/Anh/thayhung.jpg">
+		<img src="TongHop/Anh/f2.jpg">
+	</div>
+</section>
+
+<section>
+	<h2>🎬 Những thước phim không tua lại</h2>
+	<div class="videos">
+		<video src="TongHop/Video/Clip_tinhctre.mp4" controls></video>
+		<video src="TongHop/Video/hoboi.mp4" controls></video>
+		<video src="TongHop/Video/karaoke.mp4" controls></video>
+		<video src="TongHop/Video/kiniem.mp4" controls></video>
+	</div>
+</section>
+
+<section>
+	<h2>🕰️ Dòng thời gian 12 Tin</h2>
+	<div class="timeline glass">
+		<div class="time"><span>2023</span><br>Bỡ ngỡ – xa lạ – làm quen</div>
+		<div class="time"><span>2024</span><br>Thân thiết – ồn ào – không muốn lớn</div>
+		<div class="time"><span>2025</span><br>Áp lực – trưởng thành – sợ chia xa</div>
+	</div>
+</section>
+
+<section>
+	<div class="final">
+		<p>
+			Thanh xuân có thể khép lại,<br>
+			nhưng <b>12 Tin</b> sẽ ở lại mãi<br>
+			trong tim những người đã từng thuộc về nơi đây.
+		</p>
+	</div>
+</section>
+
+<footer>
+	<p>💜 Cảm ơn vì đã cùng nhau tạo nên một thời không thể quên 💜</p>
+	<p style="margin-top:20px;">Nguyễn Gia Phúc</p>
+</footer>
+
+</body>
+</html>

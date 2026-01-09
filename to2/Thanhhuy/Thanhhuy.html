@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Kỷ yếu cá nhân</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom, #f5f7fa, #e4ecf5);
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.info {
+    max-width: 400px;
+}
+
+.info h2 {
+    font-size: 30px;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.description {
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.group-image {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.group-image img {
+    width: 85%;
+    max-width: 900px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+.carousel-title {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.carousel-wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    perspective: 1400px;
+}
+
+.carousel {
+    position: relative;
+    width: 420px;
+    height: 420px;
+    transform-style: preserve-3d;
+    transition: transform 0.9s ease;
+}
+
+.carousel img {
+    position: absolute;
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: all 0.6s ease;
+}
+
+.carousel img.active {
+    width: 280px;
+    height: 190px;
+    filter: grayscale(0%);
+    transform: translateZ(380px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+    cursor: pointer;
+}
+
+.message {
+    margin-top: 90px;
+    padding: 40px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>KỶ YẾU CÁ NHÂN</h1>
+
+<div class="profile">
+    <img src="face.jpg" alt="Ảnh chân dung">
+    <div class="info">
+        <h2>Nguyễn Thanh Huy</h2>
+        <p>
+            Lớp: <b>12 Tin</b><br>
+            Khoá: <b>2023 – 2026</b>
+        </p>
+    </div>
+</div>
+
+<div class="description">
+    Lớp 12 Tin là một tập thể gồm 36 cá nhân – mỗi người một tính cách,
+    một thế mạnh riêng, nhưng tất cả đều chung một điểm: cùng đồng hành,
+    cùng cố gắng và cùng hướng về một mục tiêu chung.
+    <br><br>
+    Ba năm học không chỉ là những buổi học căng thẳng với bài vở, thuật toán,
+    mà còn là tiếng cười trong giờ ra chơi, những lần cùng nhau vượt qua áp lực
+    thi cử, và cả những kỷ niệm giản dị nhưng khó quên.
+    <br><br>
+    Với tôi, 12 Tin không chỉ là một lớp học, mà là một phần thanh xuân –
+    nơi đã lưu giữ những ký ức đẹp nhất của tuổi học trò.
+</div>
+
+<div class="group-image">
+    <img src="group.jpg" alt="Ảnh tập thể lớp">
+</div>
+
+<h2 class="carousel-title">Những khoảnh khắc đáng nhớ</h2>
+
+<div class="carousel-wrapper">
+    <div class="carousel" id="carousel">
+        <img src="1.jpg">
+        <img src="2.jpg">
+        <img src="3.jpg">
+        <img src="4.jpg">
+        <img src="5.jpg">
+        <img src="6.jpg">
+        <img src="7.jpg">
+        <img src="8.jpg">
+        <img src="9.jpg">
+        <img src="10.jpg">
+    </div>
+</div>
+
+<div class="message">
+    “Đi một mình thì đi nhanh, đi cùng nhau thì đi xa.”
+    <br><br>
+    Dù sau này mỗi người một con đường, mong rằng khi nhìn lại,
+    chúng ta vẫn có thể mỉm cười vì đã từng là một phần của 12 Tin,
+    một thời thanh xuân không thể lặp lại.
+</div>
+
+<footer>
+    © Kỷ yếu cá nhân – Nguyễn Thanh Huy
+</footer>
+
+</div>
+
+<script>
+const carousel = document.getElementById("carousel");
+const images = [...carousel.querySelectorAll("img")];
+const total = images.length;
+const step = 360 / total;
+let index = 0;
+
+images.forEach((img, i) => {
+    img.style.transform = `rotateY(${i * step}deg) translateZ(300px)`;
+});
+
+function update() {
+    images.forEach(img => img.classList.remove("active"));
+    images[index].classList.add("active");
+    carousel.style.transform = `rotateY(${-index * step}deg)`;
+}
+
+update();
+
+carousel.addEventListener("click", () => {
+    index = (index + 1) % total;
+    update();
+});
+</script>
+
+</body>
+</html>
