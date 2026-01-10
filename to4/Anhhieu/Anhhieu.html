@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỷ Yếu Cuối Cấp - Lương Văn Chánh</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://example.com/background.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .caption {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            background: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: #333;
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* Hiệu ứng mượt cho mobile */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .gallery-item img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kỷ Niệm Cấp 3</h1>
+    <p>Trường THPT Chuyên Lương Văn Chánh - "Yêu nước, Học giỏi, Kính thầy, Mến bạn"</p>
+</header>
+
+<div class="container">
+    <div class="gallery">
+        
+        <div class="gallery-item">
+            <img src="z7415568570673_6f2a56edfe6fe7353cd9ced05bd2d550.jpg" alt="Tập thể lớp">
+            <div class="caption">Dưới mái trường thân yêu</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="z7415568535229_3d543d5b612f0cf1ba3fb577004dbd3c.jpg" alt="Sân bay Tuy Hòa">
+            <div class="caption">Những chuyến đi của tuổi trẻ</div>
+        </div>
+<div class="gallery-item">
+            <img src="z7415568549462_a7f0ae663edd0eee43a6b9db26bbadc0.jpg" alt="Đội bóng">
+            <div class="caption">Đam mê trên sân cỏ</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="z7415568594411_6f2d04dabc7ac85f6b464bbd56fd9af5.jpg" alt="Nhóm bạn">
+            <div class="caption">Tình bạn khăng khít</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="z7415568588681_99b420965fca78e4c3e479995d084ec9.jpg" alt="Selfie lớp">
+            <div class="caption">Những giờ ra chơi đáng nhớ</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="z7415568618889_9b54a285c40859c7b44664229b503671.jpg" alt="Đội bóng áo tím">
+            <div class="caption">Đoàn kết là sức mạnh</div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 - Lưu giữ những khoảnh khắc đẹp nhất. Bái bai!</p>
+</footer>
+
+</body>
+</html>
